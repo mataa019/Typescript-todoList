@@ -10,7 +10,7 @@ interface TodoItemProps {
             <div>
                <label htmlFor="">
                   <input type="checkbox" className="scale-125"/>
-                  <span className={}> {todo.title}</span>
+                  <span className={todo.completed ? "line-through text-gray-400": " "}> {todo.title}</span>
                </label>
             </div>
         </>
