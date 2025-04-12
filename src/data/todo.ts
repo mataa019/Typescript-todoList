@@ -1,4 +1,6 @@
-export const dummyTodos = [
+import { Todo } from "../model/todoModel";
+
+export const dummyTodos: Todo [] = [
     {
         id:1,
         title:"Like us for more updates",
