@@ -9,7 +9,7 @@ function App() {
         Mataa here 
       </h1>
       <div className="max-w-lg mx-auto ">
-         <div className="space-y-4">
+         <div className="space-y-4 ">
             {dummyTodos.map((todo) => (
               <TodoItem todo={todo}/>
             ))}
