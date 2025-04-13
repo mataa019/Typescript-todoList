@@ -2,6 +2,7 @@ import { TodoModel } from "../model/todoModel";
 
 interface TodoItemProps {
     todo: TodoModel;
+    onCompletedChange: (id: number, completed: boolean) => void;
 }
  
  function TodoItem( {todo}: TodoItemProps) {
