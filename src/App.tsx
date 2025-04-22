@@ -20,7 +20,8 @@ function App() {
         id:prevTodos.length + 1,
         title,
         completed: false
-      }
+      },
+      ...prevTodos
     ])
    }
   return (
