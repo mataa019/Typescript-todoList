@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TodoItem from "./components/todoItem"
 import { dummyTodos } from "./data/todo"
+import AddTodoList from "./components/AddtodoForm";
 
 function App() {
      const [todos, setTodos] = useState(dummyTodos);
@@ -18,6 +19,7 @@ function App() {
         Todo List
       </h1>
       <div className="max-w-lg mx-auto bg-slate-100 rounded-md p-5">
+        <AddTodoList />
          <div className="space-y-4 ">
             {todos.map((todo) => (
               <TodoItem 
