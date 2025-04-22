@@ -6,7 +6,11 @@ function App() {
      const [todos, setTodos] = useState(dummyTodos);
 
        function setTodocompleted(id: number, completed: boolean) {
-         setTodos ((prevTodos) => {}
+         setTodos ((prevTodos) => prevTodos.map( todo => (todo.id === id? {...todo, completed}
+          : todo
+         )
+        )
+      ){}
    }
   return (
     <main className="py-8  h-screen space-y-5">
