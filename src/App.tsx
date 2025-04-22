@@ -18,7 +18,7 @@ function App() {
       <h1 className="text-4xl text-center font-bold">
         Todo List
       </h1>
-      <div className="max-w-lg mx-auto bg-slate-100 rounded-md p-5">
+      <div className="max-w-lg mx-auto bg-slate-100 rounded-md p-5 space-y-6">
         <AddTodoList />
          <div className="space-y-4 ">
             {todos.map((todo) => (
