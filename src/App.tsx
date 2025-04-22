@@ -4,9 +4,10 @@ import { dummyTodos } from "./data/todo"
 
 function App() {
      const [todos, setTodos] = useState(dummyTodos);
-  function setTodocompleted(id: number, completed: boolean) {
-          alert(`Todo with id ${id} is now ${completed ? "completed" : "not completed"}`);
-  }
+
+       function setTodocompleted(id: number, completed: boolean) {
+         setTodos ((prevTodos) => {}
+   }
   return (
     <main className="py-8  h-screen space-y-5">
       <h1 className="text-4xl text-center font-bold">
