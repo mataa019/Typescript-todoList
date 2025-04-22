@@ -4,7 +4,7 @@ import { dummyTodos } from "./data/todo"
 function App() {
 
   function setTodocompleted(id: number, completed: boolean) {
-
+          alert(`Todo with id ${id} is now ${completed ? "completed" : "not completed"}`);
   }
   return (
     <main className="py-8  h-screen space-y-5">
