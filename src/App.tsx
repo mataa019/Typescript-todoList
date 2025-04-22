@@ -13,13 +13,16 @@ function App() {
         )
       )
    }
+
+   function addtodo(title: string) {
   return (
     <main className="py-8  h-screen space-y-5">
       <h1 className="text-4xl text-center font-bold">
         Todo List
       </h1>
       <div className="max-w-lg mx-auto bg-slate-100 rounded-md p-5 space-y-6">
-        <AddTodoList />
+        <AddTodoList 
+        onSubmit={addtodo}/>
          <div className="space-y-4 ">
             {todos.map((todo) => (
               <TodoItem 

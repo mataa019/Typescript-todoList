@@ -9,9 +9,9 @@ function AddTodoList ({onSubmit}: AddTodoListProps) {
 
      function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
-    if(!input.trim()) return;
-    onSubmit(input);
-    setInput("");
+       if(!input.trim()) return;
+      onSubmit(input);
+       setInput("");
      }
 
     return(
