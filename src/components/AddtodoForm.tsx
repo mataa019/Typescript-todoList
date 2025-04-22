@@ -3,7 +3,10 @@ import { useState } from "react";
 function AddTodoList (){
     const [input, setInput] = useState("");
 
-     function handleSubmit(e: React.FormEvent<HTMLFormElement>) {}
+     function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+        e.preventDefault();
+
+     }
 
     return(
         <div className="add-todo-form">
