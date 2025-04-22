@@ -1,5 +1,9 @@
 import { useState } from "react";
 
+
+interface AddTodoListProps {
+    
+}
 function AddTodoList (){
     const [input, setInput] = useState("");
 
