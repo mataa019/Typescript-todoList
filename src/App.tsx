@@ -19,7 +19,7 @@ function App() {
       </h1>
       <div className="max-w-lg mx-auto bg-slate-100 rounded-md p-5">
          <div className="space-y-4 ">
-            {dummyTodos.map((todo) => (
+            {todos.map((todo) => (
               <TodoItem 
                 todo={todo}
                 key={todo.id}
