@@ -5,7 +5,7 @@ function AddTodoList (){
 
      function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
-
+    if(!input.trim()) return;
      }
 
     return(
