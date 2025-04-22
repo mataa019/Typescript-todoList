@@ -10,7 +10,7 @@ function App() {
           : todo
          )
         )
-      ){}
+      )
    }
   return (
     <main className="py-8  h-screen space-y-5">
