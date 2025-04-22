@@ -1,8 +1,9 @@
+import { useState } from "react";
 import TodoItem from "./components/todoItem"
 import { dummyTodos } from "./data/todo"
 
 function App() {
-
+     const [todos, setTodos] = useState(dummyTodos);
   function setTodocompleted(id: number, completed: boolean) {
           alert(`Todo with id ${id} is now ${completed ? "completed" : "not completed"}`);
   }
