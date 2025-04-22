@@ -15,6 +15,14 @@ function App() {
    }
 
    function addtodo(title: string) {
+    setTodos((prevTodos) => [
+      {
+        id:prevTodos.length + 1,
+        title,
+        completed: false
+      }
+    ])
+   }
   return (
     <main className="py-8  h-screen space-y-5">
       <h1 className="text-4xl text-center font-bold">
