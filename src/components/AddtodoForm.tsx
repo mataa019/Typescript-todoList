@@ -2,10 +2,13 @@ import { useState } from "react";
 
 function AddTodoList (){
     const [input, setInput] = useState("");
+
+     function handleSubmit(e: React.FormEvent<HTMLFormElement>) {}
+
     return(
         <div className="add-todo-form">
             <h2>Add Todo</h2>
-            
+
             <form className=" flex">
                 <input 
                 value={input}
