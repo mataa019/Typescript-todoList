@@ -2,9 +2,9 @@ import { useState } from "react";
 
 
 interface AddTodoListProps {
-    
+     onSubmit: (title: string) => void;
 }
-function AddTodoList (){
+function AddTodoList ({onSubmit}: AddTodoListProps) {
     const [input, setInput] = useState("");
 
      function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
